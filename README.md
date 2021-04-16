@@ -9,21 +9,42 @@ To create a new link, paste this code into a `file.html`. Change some links and 
 <html>
     <head>
         <!-- title -->
-        <title>linkitz</title>
+        <title>Gmail</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
-        <link id="favicon" rel="icon" href="../i/.png"
-        type="image/x-icon" /> <!-- small icon -->
-        <link id="favicon" rel="icon" href="../i/.png"
-        type="image/x-icon" /> <!-- speed dial -->
+        <link id="favicon" rel="icon" href="../i/gmail.png"
+        type="image/x-icon" />
         <!-- viewport and sizing -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- redirect -->
-        <meta http-equiv="refresh" content="10; URL=https://linkitz.web.app" />
+        <meta http-equiv="refresh" content="2; URL=https://mail.google.com/mail/u/0/" />
+        <style>
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
     </head>
     <body>
-        <img src="../i/.png" style="display: none;">
+        <img src="../i/gmail.png" style="display: none;">
+        <img id="randomImage" style="width:100%;z-index:0;" class="center"/>
+        <script>
+            function getRandomImage() {
+            var images = ['../i/random/motivation1.png', '../i/random/motivation2.png', '../i/random/motivation3.png', '../i/random/motivation4.png', '../i/random/motivation5.png', '../i/random/motivation6.png', '../i/random/motivation7.png', '../i/random/motivation8.png', '../i/random/motivation9.png', '../i/random/motivation10.png', '../i/random/motivation11.png', '../i/random/motivation12.png',];
+            var image = images[Math.floor(Math.random()*images.length)];
+            
+            return image;
+            }
+            
+            function displayRandomImage() {
+            var htmlImage = document.getElementById("randomImage");
+            htmlImage.src = getRandomImage();
+            }
+            displayRandomImage();
+        </script>
     </body>
 </html>
 ```
