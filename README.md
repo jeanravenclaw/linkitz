@@ -18,7 +18,7 @@ To create a new link, paste this code into a `file.html`. Change some links and 
         <!-- viewport and sizing -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- redirect -->
-        <meta http-equiv="refresh" content="2; URL=https://mail.google.com/mail/u/0/" />
+        <meta http-equiv="refresh" content="5; URL=https://mail.google.com/mail/u/0/" />
         <style>
             .center {
                 display: block;
@@ -29,7 +29,7 @@ To create a new link, paste this code into a `file.html`. Change some links and 
     </head>
     <body>
         <img src="../i/gmail.png" style="display: none;">
-        <img id="randomImage" style="height:100%;z-index:0;" class="center"/>
+        <img id="randomImage" style="height:100%;" class="center"/>
         <script>
             function getRandomImage() {
             var images = ['../i/random/motivation1.png', '../i/random/motivation2.png', '../i/random/motivation3.png', '../i/random/motivation4.png', '../i/random/motivation5.png', '../i/random/motivation6.png', '../i/random/motivation7.png', '../i/random/motivation8.png', '../i/random/motivation9.png', '../i/random/motivation10.png', '../i/random/motivation11.png', '../i/random/motivation12.png',];
