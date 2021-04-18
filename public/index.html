@@ -16,6 +16,93 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body class="markdown-body">
+    <h1 id="linkitz">linkitz</h1>
+    <p>A simple multi-purpose link website.</p>
+    <p>This is not a link shortener, but a way to customise your shortcuts, specifically Opera GX. Or you can just customise your browser experience by adding an image while browsing.</p>
+
+    <h2 id="url-parameters">URL parameters</h2>
+    <p>We don't make a new page for every single link. Instead we use URL parameters that you can fill in when saving your shortcut.</p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=___&amp;image=___&amp;redirect=___&amp;time=___</code></pre>
+    <p>The blanks are where you can input some data to customise your experience! If you have a general idea of how to use them, here's a table showing what each parameter is:</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th align="left">Parameter</th>
+    <th align="left">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><code>thumb=</code></td>
+    <td align="left">This will be hidden, but available in the thumbnail options in Opera. To get an image link, upload to <a href="https://imgur.com">Imgur</a>.</td>
+    </tr>
+    <tr class="even">
+    <td align="left"><code>image=</code></td>
+    <td align="left">When redirecting, you can choose a custom image to display. To get an image link, upload to <a href="https://imgur.com">Imgur</a>.</td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><code>redirect=</code></td>
+    <td align="left">Where should you be redirected?</td>
+    </tr>
+    <tr class="even">
+    <td align="left"><code>time=</code></td>
+    <td align="left">This should be in milliseconds (seconds + 000).</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>If you don't know what to do, go <a href="https://ipt0t15yybc.typeform.com/to/Yz0az0d8">here</a> for a step-by-step form. You can just copy your new link.</p>
+
+    <h2 id="how-it-works">How it works</h2>
+    <p>It may be a bit confusing, with all these cool terms and such. Here's a longer explanation on each component.</p>
+    <h3 id="changing-the-thumbnail">Changing the thumbnail</h3>
+    <p>Opera usually gives you some options to use as a thumbnail on your Speed Dial. Usually, you won't get the thumbnail you want.</p>
+    <p>For example, this is the icon for Google:</p>
+    <div class="figure">
+    <img src="i/../public/i/samples/GoogleOriginal.png" alt="Original Google icon in Opera GX" /><p class="caption">Original Google icon in Opera GX</p>
+    </div>
+    <p>If you want to use a different icon instead, you can use linkitz to create a redirect link that has your desired image as an icon. After a couple of seconds, you can go straight to Google as normal.</p>
+    <div class="figure">
+    <img src="i/../public/i/samples/GoogleNew.png" alt="New Google icon in Opera GX" /><p class="caption">New Google icon in Opera GX</p>
+    </div>
+    <p>Let's take our linkitz link that we'll be using:</p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=___&amp;image=___&amp;redirect=___&amp;time=___</code></pre>
+    <p>Take note of the parameters <code>thumb=</code> and <code>redirect=</code>. The blanks following them are where you'll input your data.</p>
+    <p>Say we've found a good thumbnail online:</p>
+    <pre class="https"><code>https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg</code></pre>
+    <div class="figure">
+    <img src="https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg" alt="Google logo" /><p class="caption">Google logo</p>
+    </div>
+    <p>And we want to redirect to Google:</p>
+    <pre class="https"><code>https://www.google.com</code></pre>
+    <p>Now, we can fill in our link with these parameters. We can add our thumbnail to <code>thumb</code> and our redirect URL to <code>redirect</code></p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&amp;image=___&amp;redirect=https://www.google.com&amp;time=___</code></pre>
+    <p>(It seems to have gotten a little longer...)</p>
+
+    <h3 id="adding-a-redirect-image-and-delay">Adding a redirect image and delay</h3>
+    <p>It usually takes a few seconds to change the thumbnail from Opera GX's default to a better image.</p>
+    <p>Your normal redirect wouldn't work. So we'll need to stay in the website a little longer.</p>
+    <p>We'll add a delay to our redirect. If we want to redirect in 5 seconds, we could add that to the URL parameters.</p>
+    <p>However, it needs to be in milliseconds. So we add:</p>
+    <pre class="int"><code>5000</code></pre>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=___&amp;image=___&amp;redirect=___&amp;time=___</code></pre>
+    <p>We can now fill in our <code>time</code> with our delay.</p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=___&amp;image=___&amp;redirect=___&amp;time=5000</code></pre>
+    <p>Since a blank white page is a boring thing to look at for 5 straight seconds, we can also add an image to look at.</p>
+    <p>There's a good image on the internet:</p>
+    <pre class="https"><code>http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif</code></pre>
+    <div class="figure">
+    <img src="https://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif" alt="Google doodle" /><p class="caption">Google doodle</p>
+    </div>
+    <p>We can now add this to the <code>image</code> parameter. Our link should now look like this (minus the redirect and thumbnail, since it's too long.)</p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=___&amp;image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&amp;redirect=___&amp;time=5000</code></pre>
     
+    <h3 id="now-we-have-our-link">Now we have our link</h3>
+    <p>Let's merge our links together to make a nice Google link that takes 5 seconds to redirect.</p>
+    <pre class="https"><code>https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&amp;image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&amp;redirect=https://google.com&amp;time=5000</code></pre>
+    <p>(You can go directly to the redirect <a href="https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&amp;image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&amp;redirect=https://google.com&amp;time=5000">here</a>.)</p>
+    <p>It's long, but we don't need to see the full URL in our shortcut.</p>
+    <p>You can now add this as a bookmark and change the icon you want, then you can now appreciate a prettier icon. You can use any website, any images, the redirect can take as long as you like.</p>
+    <p>However, if you want to keep it simple, go <a href="https://ipt0t15yybc.typeform.com/to/Yz0az0d8">here</a> for a step-by-step form. You can just copy your new link.</p>
+
 </body>
 </html>
