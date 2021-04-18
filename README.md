@@ -4,6 +4,13 @@ A simple multi-purpose link website.
 
 This is not a link shortener, but a way to customise your shortcuts, specifically Opera GX. Or you can just customise your browser experience by adding an image while browsing.
 
+- [linkitz](#linkitz)
+  - [URL parameters](#url-parameters)
+  - [How it works](#how-it-works)
+    - [Changing the thumbnail](#changing-the-thumbnail)
+    - [Adding a redirect image and delay](#adding-a-redirect-image-and-delay)
+    - [Now we have our link](#now-we-have-our-link)
+
 ## URL parameters
 
 We don't make a new page for every single link. Instead we use URL parameters that you can fill in when saving your shortcut.
