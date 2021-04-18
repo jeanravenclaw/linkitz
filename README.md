@@ -35,7 +35,7 @@ For example, this is the icon for Google:
 
 ![Original Google icon in Opera GX](i/../public/i/samples/GoogleOriginal.png)
 
-If you want to use a different icon instead, you can use linkitz to create a redirect link that has your desired image as an icon.
+If you want to use a different icon instead, you can use linkitz to create a redirect link that has your desired image as an icon. After a couple of seconds, you can go straight to Google as normal.
 
 ![New Google icon in Opera GX](i/../public/i/samples/GoogleNew.png)
 
@@ -116,6 +116,8 @@ Let's merge our links together to make a nice Google link that takes 5 seconds t
 ```https
 https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&redirect=https://google.com&time=5000
 ```
+
+(You can go directly to the redirect [here](https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&redirect=https://google.com&time=5000).)
 
 It's long, but we don't need to see the full URL in our shortcut.
 
