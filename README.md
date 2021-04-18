@@ -4,33 +4,29 @@ A simple multi-purpose link website.
 
 This is not a link shortener, but a way to customise your shortcuts, specifically Opera GX. Or you can just customise your browser experience by adding an image while browsing.
 
-- [linkitz](#linkitz)
-  - [URL parameters](#url-parameters)
-  - [How it works](#how-it-works)
-    - [Changing the thumbnail](#changing-the-thumbnail)
-    - [Adding a redirect image and delay](#adding-a-redirect-image-and-delay)
-    - [Now we have our link](#now-we-have-our-link)
-
-## URL parameters
+## How to use
 
 We don't make a new page for every single link. Instead we use URL parameters that you can fill in when saving your shortcut.
 
 ```https
-https://linkitz.web.app/l?thumb=___&image=___&redirect=___&time=___
+https://linkitz.web.app/l?thumb=___&redirect=___&delay=___
 ```
 
-The blanks are where you can input some data to customise your experience! If you have a general idea of how to use them, here's a table showing what each parameter is:
+The blanks are where you can input some data to customise your experience! If you have a general idea of how to use them, here's a table showing what each parameter defines:
 
 | Parameter   | Description                                                                                                                       |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `thumb=`    | This will be hidden, but available in the thumbnail options in Opera. To get an image link, upload to [Imgur](https://imgur.com). |
-| `image=`    | When redirecting, you can choose a custom image to display. To get an image link, upload to [Imgur](https://imgur.com).           |
 | `redirect=` | Where should you be redirected?                                                                                                   |
-| `time=`     | This should be in milliseconds (seconds + 000).                                                                                   |
+| `delay=`    | This should be in milliseconds (seconds + 000).                                                                                   |
+
+Once you fill in all of these (and turn them into shortcuts), you can start using your shortcuts as normal!
+
+Note that to use the thumbnail, you will have to click on the heart icon and select an image. You may have to refresh a couple of times.
 
 If you don't know what to do, go [here](https://ipt0t15yybc.typeform.com/to/Yz0az0d8) for a step-by-step form. You can just copy your new link.
 
-## How it works
+<!-- ## How it works
 
 It may be a bit confusing, with all these cool terms and such. Here's a longer explanation on each component.
 
@@ -130,4 +126,4 @@ It's long, but we don't need to see the full URL in our shortcut.
 
 You can now add this as a bookmark and change the icon you want, then you can now appreciate a prettier icon. You can use any website, any images, the redirect can take as long as you like.
 
-However, if you want to keep it simple, go [here](https://ipt0t15yybc.typeform.com/to/Yz0az0d8) for a step-by-step form. You can just copy your new link.
+However, if you want to keep it simple, go [here](https://ipt0t15yybc.typeform.com/to/Yz0az0d8) for a step-by-step form. You can just copy your new link. -->

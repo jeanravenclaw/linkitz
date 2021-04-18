@@ -30,13 +30,13 @@
         <script>
             // url params
             const queryString = window.location.search;
-            console.log(queryString); // ?thumb=___&image=___&redirect=___&time=___
+            console.log(queryString); // ?thumb=___&image=___&redirect=___&delay=___
 
             const urlParams = new URLSearchParams(queryString);
             
-            // get image
+            /* get image
             const image = urlParams.get('image')
-            console.log(image);
+            console.log(image); */
 
             // get redirect
             const redirect = urlParams.get('redirect')
@@ -46,12 +46,11 @@
             const thumb = urlParams.get('thumb')
             console.log(thumb);
 
-            // get time
-            const time = urlParams.get('time')
-            console.log(time);
+            // get delay
+            const delay = urlParams.get('delay')
+            console.log(delay);
 
-            // display image
-            /*
+            /* display image
             function displayRandomImage() {
             var htmlImage = document.getElementById("randomImage");
             htmlImage.src = image;
@@ -61,7 +60,7 @@
             // redirect
             setTimeout(function(){
             window.location.href = redirect;
-            }, Number(time));
+            }, Number(delay));
 
             // thumbnail
             const favicon = document.querySelector('[rel=icon]');
