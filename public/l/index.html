@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title -->
+        <title>Link</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- viewport and sizing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                height: 100%;
+            }
+            .center {
+                /* Full height */
+                height: 100%;
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="thumb" style="display: none;">
+        <img id="randomImage" style="height:100%;" class="center"/>
+        <script>
+            // url params
+            const queryString = window.location.search;
+            console.log(queryString); // ?thumb=___&image=___&redirect=___
+
+            const urlParams = new URLSearchParams(queryString);
+            
+            // get image
+            const image = urlParams.get('image')
+            console.log(image);
+
+            // get redirect
+            const redirect = urlParams.get('redirect')
+            console.log(redirect);
+
+            // get thumbnail
+            const thumb = urlParams.get('thumb')
+            console.log(thumb);
+
+            // display image
+            function displayRandomImage() {
+            var htmlImage = document.getElementById("randomImage");
+            htmlImage.src = image;
+            }
+            displayRandomImage();
+
+            // display thumbnail
+            function displayRandomImage2() {
+            var htmlImage2 = document.getElementById("thumb");
+            htmlImage2.src = thumb;
+            }
+            displayRandomImage2();
+
+            // redirect
+            setTimeout(function(){
+            window.location.href = redirect;
+            }, 5000);
+        </script>
+    </body>
+</html>
