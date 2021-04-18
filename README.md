@@ -28,104 +28,24 @@ Note that to use the thumbnail, you will have to click on the heart icon and sel
 
 If you don't know what to do, go [here](https://ipt0t15yybc.typeform.com/to/Yz0az0d8) for a step-by-step form. You can just copy your new link.
 
-<!-- ## How it works
+## Bookmark it
 
-It may be a bit confusing, with all these cool terms and such. Here's a longer explanation on each component.
+If you don't know how to create a bookmark, follow these instructions.
 
-### Changing the thumbnail
+1. Go to the desired website. We'll be using Google.
+2. Click on the heart icon in the upper-right corner.
 
-Opera usually gives you some options to use as a thumbnail on your Speed Dial. Usually, you won't get the thumbnail you want.
+    ![Heart Icon](https://i.imgur.com/RoNbbyR.png)
 
-For example, this is the icon for Google:
+3. Use the arrow keys to choose a thumbnail.
 
-![Original Google icon in Opera GX](i/../public/i/samples/GoogleOriginal.png)
+    ![Opera GX bookmark settings](https://i.imgur.com/xCugZeF.png)
 
-If you want to use a different icon instead, you can use linkitz to create a redirect link that has your desired image as an icon. After a couple of seconds, you can go straight to Google as normal.
+    If the thumbnail you expected isn't appearing, try refreshing and deleting the bookmark. Do this a couple of times. If it's still not appearing, it may not exist.
+4. Your bookmark should now be in your Speed Dial (or in a bookmark folder)
 
-![New Google icon in Opera GX](i/../public/i/samples/GoogleNew.png)
+    ![Google Bookmark](https://i.imgur.com/t0ohpK5.png)
 
-Let's take our linkitz link that we'll be using:
+The main purpose of linkitz is to help you customise your bookmarks without having to do some file-rummaging and code-editing. Instead, you can just use an alternative link.
 
-```https
-https://linkitz.web.app/l?thumb=___&image=___&redirect=___&time=___
-```
-
-Take note of the parameters `thumb=` and `redirect=`. The blanks following them are where you'll input your data.
-
-Say we've found a good thumbnail online:
-
-```https
-https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg
-```
-
-![Google logo](https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg)
-
-And we want to redirect to Google:
-
-```https
-https://www.google.com
-```
-
-Now, we can fill in our link with these parameters. We can add our thumbnail to `thumb` and our redirect URL to `redirect`
-
-```https
-https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&image=___&redirect=https://www.google.com&time=___
-```
-
-(It seems to have gotten a little longer...)
-
-### Adding a redirect image and delay
-
-It usually takes a few seconds to change the thumbnail from Opera GX's default to a better image.
-
-Your normal redirect wouldn't work. So we'll need to stay in the website a little longer.
-
-We'll add a delay to our redirect. If we want to redirect in 5 seconds, we could add that to the URL parameters.
-
-However, it needs to be in milliseconds. So we add:
-
-```int
-5000
-```
-
-```https
-https://linkitz.web.app/l?thumb=___&image=___&redirect=___&time=___
-```
-
-We can now fill in our `time` with our delay.
-
-```https
-https://linkitz.web.app/l?thumb=___&image=___&redirect=___&time=5000
-```
-
-Since a blank white page is a boring thing to look at for 5 straight seconds, we can also add an image to look at.
-
-There's a good image on the internet:
-
-```https
-http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif
-```
-
-![Google doodle](https://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif)
-
-We can now add this to the `image` parameter. Our link should now look like this (minus the redirect and thumbnail, since it's too long.)
-
-```https
-https://linkitz.web.app/l?thumb=___&image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&redirect=___&time=5000
-```
-
-### Now we have our link
-
-Let's merge our links together to make a nice Google link that takes 5 seconds to redirect.
-
-```https
-https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&redirect=https://google.com&time=5000
-```
-
-(You can go directly to the redirect [here](https://linkitz.web.app/l?thumb=https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-1030x541.jpg&image=http://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-cricket-2017-6753651837108767-2xa.gif&redirect=https://google.com&time=5000).)
-
-It's long, but we don't need to see the full URL in our shortcut.
-
-You can now add this as a bookmark and change the icon you want, then you can now appreciate a prettier icon. You can use any website, any images, the redirect can take as long as you like.
-
-However, if you want to keep it simple, go [here](https://ipt0t15yybc.typeform.com/to/Yz0az0d8) for a step-by-step form. You can just copy your new link. -->
+Please note that it may take a couple of seconds for you to pick the right thumbnail, which is why you'll need a redirect delay.
