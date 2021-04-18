@@ -4,6 +4,8 @@ A simple multi-purpose link website.
 
 This is not a link shortener, but a way to customise your shortcuts, specifically Opera GX. Or you can just customise your browser experience by adding an image while browsing.
 
+[![Visit the Website](public/i/md/website.png)](https://linkitz.web.app) [![Generate a Link](public/i/md/generate.png)](https://ipt0t15yybc.typeform.com/to/Yz0az0d8)
+
 ## How to use
 
 We don't make a new page for every single link. Instead we use URL parameters that you can fill in when saving your shortcut.
