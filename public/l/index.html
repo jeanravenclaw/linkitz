@@ -30,7 +30,7 @@
         <script>
             // url params
             const queryString = window.location.search;
-            console.log(queryString); // ?thumb=___&image=___&redirect=___
+            console.log(queryString); // ?thumb=___&image=___&redirect=___&time=___
 
             const urlParams = new URLSearchParams(queryString);
             
@@ -45,6 +45,10 @@
             // get thumbnail
             const thumb = urlParams.get('thumb')
             console.log(thumb);
+
+            // get time
+            const time = urlParams.get('time')
+            console.log(time);
 
             // display image
             function displayRandomImage() {
@@ -63,7 +67,7 @@
             // redirect
             setTimeout(function(){
             window.location.href = redirect;
-            }, 5000);
+            }, time);
         </script>
     </body>
 </html>
