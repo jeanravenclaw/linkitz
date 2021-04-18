@@ -5,8 +5,8 @@
         <title>Link</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- viewport and sizing -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- style sheets -->
+        <link rel="stylesheet" href=".css/blob.css" />
         <style>
             * {
                 margin: 0%;
@@ -25,7 +25,6 @@
         </style>
     </head>
     <body>
-        <img id="thumb" style="display: none;">
         <img id="randomImage" style="height:100%;" class="center"/>
         <script>
             // url params
@@ -51,12 +50,13 @@
             console.log(time);
 
             // display image
+            /*
             function displayRandomImage() {
             var htmlImage = document.getElementById("randomImage");
             htmlImage.src = image;
             }
-            displayRandomImage();
-
+            displayRandomImage();*/
+            
             // display thumbnail
             function displayRandomImage2() {
             var htmlImage2 = document.getElementById("thumb");
@@ -68,6 +68,30 @@
             setTimeout(function(){
             window.location.href = redirect;
             }, Number(time));
+
+            // thumbnail
+            const favicon = document.querySelector('[rel=icon]');
+            favicon.href = thumb;
         </script>
+        
+
+        <!-- blob -->
+        <div class="cssload-dots">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+        </div>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                    <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+                </filter>
+            </defs>
+        </svg>
     </body>
 </html>
