@@ -7,7 +7,7 @@ This is not a link shortener, but a way to customise your shortcuts. Specially m
 ## How to use
 
 ```https
-https://linkitz.web.app/?thumb=___&image=___&redirect=___&time=___
+https://linkitz.web.app/l?thumb=___&image=___&redirect=___&time=___
 ```
 
 Fill in the blanks with your desired parameters.
