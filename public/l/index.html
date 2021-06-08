@@ -27,17 +27,12 @@
         </style>
     </head>
     <body>
-        <img id="randomImage" style="height:100%;" class="center"/>
         <script>
             // url params
             const queryString = window.location.search;
-            console.log(queryString); // ?thumb=___&image=___&redirect=___&delay=___
+            console.log(queryString); // ?thumb=___ etc
 
             const urlParams = new URLSearchParams(queryString);
-            
-            /* get image
-            const image = urlParams.get('image')
-            console.log(image); */
 
             // get redirect
             const redirect = urlParams.get('redirect')
@@ -51,12 +46,13 @@
             const delay = urlParams.get('delay')
             console.log(delay);
 
-            /* display image
-            function displayRandomImage() {
-            var htmlImage = document.getElementById("randomImage");
-            htmlImage.src = image;
-            }
-            displayRandomImage();*/
+            // get title
+            const title = urlParams.get('title')
+            console.log(title);
+
+            // get favicon 
+            const favicon = urlParams.get('favicon')
+            console.log(favicon);
 
             // redirect
             setTimeout(function(){
@@ -64,8 +60,11 @@
             }, Number(delay));
 
             // thumbnail
-            const favicon = document.querySelector('[rel=icon]');
-            favicon.href = thumb;
+            const docFavicon = document.querySelector('[rel=icon]');
+            docFavicon.href = favicon;
+
+            // set title
+            document.title = title;
         </script>
         
 

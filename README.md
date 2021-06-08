@@ -11,16 +11,18 @@ This is not a link shortener, but a way to customise your shortcuts, specificall
 We don't make a new page for every single link. Instead we use URL parameters that you can fill in when saving your shortcut.
 
 ```https
-https://linkitz.web.app/l?thumb=___&redirect=___&delay=___
+https://linkitz.web.app/l?params
 ```
 
 The blanks are where you can input some data to customise your experience! If you have a general idea of how to use them, here's a table showing what each parameter defines:
 
-| Parameter   | Description                                                                                                                       |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Parameter   | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
 | `thumb=`    | This will be hidden, but available in the thumbnail options in Opera. To get an image link, upload to [Imgur](https://imgur.com). |
-| `redirect=` | Where should you be redirected?                                                                                                   |
-| `delay=`    | This should be in milliseconds (seconds + 000).                                                                                   |
+| `redirect=` | Where should you be redirected?                              |
+| `delay=`    | This should be in milliseconds (seconds + 000).              |
+| `title=` | The title displayed for the redirect link. |
+| `favicon=` | The favicon displayed for the redirect link. To get an image link, upload to [Imgur](https://imgur.com). |
 
 Once you fill in all of these (and turn them into shortcuts), you can start using your shortcuts as normal!
 
