@@ -59,9 +59,13 @@
             window.location.href = redirect;
             }, Number(delay));
 
-            // thumbnail
-            const docFavicon = document.querySelector('[rel=icon]');
+            // favicon
+            const docFavicon = document.querySelector('[rel=shortcut icon]');
             docFavicon.href = favicon;
+
+            // thumbnail
+            const docFavicon2 = document.querySelector('[rel=icon]');
+            docFavicon2.href = thumb;
 
             // set title
             document.title = title;
